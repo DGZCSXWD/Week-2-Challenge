@@ -54,7 +54,7 @@ body {
 
 .intro {
   display: flex;
-  height: 80px;
+  height: auto;
   margin: 20px;
 }
 
@@ -80,6 +80,7 @@ body {
 
 .box2 p {
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .work {

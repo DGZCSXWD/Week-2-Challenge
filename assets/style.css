@@ -1,0 +1,302 @@
+body {
+  background-color: antiquewhite;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: aliceblue;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.img {
+  width: 100vw;
+  height: 20vw;
+  position: relative;
+}
+
+#img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#subinimg {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  z-index: 1;
+  color: white;
+}
+
+#myphoto {
+  width: 13%;
+  position: absolute;
+  right: 10%;
+  bottom: 25%;
+}
+
+.intro {
+  display: flex;
+  height: 80px;
+  margin: 20px;
+}
+
+.box1 {
+  display: flex;
+  flex: 1;
+  border-right: 5px solid white;
+  justify-content: right;
+  align-items: center;
+}
+
+.box1 h2 {
+  margin-right: 20px;
+}
+
+.box2 {
+  display: flex;
+  flex: 4;
+  justify-content: left;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.box2 p {
+  margin-left: 10px;
+}
+
+.work {
+  display: flex;
+  height: auto;
+  margin: 20px;
+}
+
+.box3 {
+  display: flex;
+  flex: 1;
+  border-right: 5px solid white;
+  justify-content: right;
+  align-items: center;
+}
+
+.box3 h2 {
+  margin-right: 20px;
+}
+
+.box4 {
+  display: flex;
+  flex: 4;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.card1 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card1 section {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  color: white;
+  background-color: black;
+}
+
+.card2 {
+  position: relative;
+  width: 50%;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card2 section {
+  font-size: 75%;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  color: white;
+  background-color: black;
+}
+
+.box4 img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact {
+  display: flex;
+  height: 80px;
+  margin: 20px;
+}
+
+.box5 {
+  display: flex;
+  flex: 1;
+  border-right: 5px solid white;
+  justify-content: right;
+  align-items: center;
+}
+
+.box5 h2 {
+  margin-right: 20px;
+}
+
+.box6 {
+  display: flex;
+  flex: 4;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.box6 ul {
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.box6 li {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.work img:hover {
+  filter: brightness(125%);
+}
+
+.navbar li:hover {
+  font-size: 125%;
+}
+
+.contact li:hover {
+  font-size: 125%;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .navbar h1 {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    width: 100%;
+    background-color: #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .img {
+    width: 100vw;
+    height: 40vw;
+  }
+
+  .intro {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 5px solid white;
+  }
+
+  .box2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box3 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 5px solid white;
+  }
+
+  .box4 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card2 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .card2 section {
+    font-size: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box5 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 5px solid white;
+  }
+
+  .box6 {
+    width: 100%;
+    background-color: #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0;
+  }
+}
